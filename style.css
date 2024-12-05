@@ -1,0 +1,127 @@
+*{
+    margin : 0px;
+    padding : 0px;
+
+}
+h1{
+    text-align: center ;
+    
+}
+body{
+    background-color: #f2e8cf;
+}
+
+
+.main{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.outer{
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+    /* margin: 100px; */
+    background-color: #F5F5F5;
+    border: 2px solid 9E9E9E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    border-radius: 5%;
+    
+}
+
+.box{
+    border-left: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid #80DEEA;
+    border-right: 5px solid #80DEEA;
+    border-top: 5px solid #F1FFFF;
+    height : 150px;
+    width: 150px;
+    background-color: #caf0f8;
+    box-shadow: 12px 7px 15px #081350cf;
+    border-radius: 15%;
+    font-size:100px;
+    color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 
+        -1px -1px 0 #8B4513,
+        1px -1px 0 #8B4513,
+        -1px  1px 0 #8B4513,
+        1px  1px 0 #8B4513;
+}
+
+.box:active{
+    transform: scale(0.95);
+    background-color: #8be4fa;
+    
+}
+.heading, .winner {
+    font-size: 2.5rem;
+    color: #FFD700;
+    text-align: center;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 3px solid #B8860B;
+    border-radius: 8px;
+    background-color: #FFF8DC;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 
+    -1px -1px 0 #8B4513,
+    1px -1px 0 #8B4513,
+    -1px  1px 0 #8B4513,
+    1px  1px 0 #8B4513;
+}
+#reset, .newGame {
+    font-size: 2.5rem;
+    color: #FFD700;
+    text-align: center;
+    width: 250px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: 3px solid #B8860B;
+    border-radius: 8px;
+    background-color: #FFF8DC;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 
+    -1px -1px 0 #8B4513,
+    1px -1px 0 #8B4513,
+    -1px  1px 0 #8B4513,
+    1px  1px 0 #8B4513;
+  }
+  #reset:active, .newGame:active{
+    transform: scale(0.95);
+  }
+  .show-winner {
+    display:flex;
+    z-index: 10; /* Bring it to the front */
+    transform: translate(50px,50px);
+    margin-bottom: 0px;
+  }
+  
+
+  .winner{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 30%;
+  }
+ .hide{
+  display: none;
+ }
+
+ .show{
+  display: inline;
+ }
+ .win{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: red;
+ }
